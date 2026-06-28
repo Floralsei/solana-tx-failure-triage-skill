@@ -1,0 +1,4 @@
+interface:
+  display_name: "Solana Tx Failure Triage"
+  short_description: "Diagnose failed Solana transactions"
+  default_prompt: "Use $solana-tx-failure-triage to diagnose this failed Solana transaction and suggest fixes."

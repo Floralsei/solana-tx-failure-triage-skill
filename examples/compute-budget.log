@@ -1,0 +1,5 @@
+Program 11111111111111111111111111111111 invoke [1]
+Program log: begin swap
+Program consumption: 200000 of 200000 compute units
+Program failed to complete: exceeded maximum number of instructions allowed
+InstructionError: [2, ComputationalBudgetExceeded]

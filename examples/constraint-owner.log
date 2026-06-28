@@ -1,0 +1,4 @@
+Program log: AnchorError caused by account: vault_token_account.
+Program log: Error Code: ConstraintOwner. Error Number: 2004.
+Program log: Error Message: A token account owner was invalid.
+InstructionError: [1, { "Custom": 2004 }]
