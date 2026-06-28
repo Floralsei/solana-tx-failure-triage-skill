@@ -27,6 +27,9 @@ examples/
   blockhash-expired.log
   compute-budget.log
   constraint-owner.log
+  demo-report.md
+tests/
+  run_smoke_tests.py
 ```
 
 ## Install
@@ -42,6 +45,28 @@ The bundled script can be run directly:
 ```bash
 python skill/scripts/triage_logs.py --input examples/compute-budget.log --format markdown
 ```
+
+It also accepts stdin, which is useful when copying a sanitized RPC error or simulation log from another tool:
+
+```bash
+type examples/blockhash-expired.log | python skill/scripts/triage_logs.py --format json
+```
+
+## Local Verification
+
+Run the offline smoke tests:
+
+```bash
+python tests/run_smoke_tests.py
+```
+
+Expected result:
+
+```text
+Smoke tests passed: fixtures classified and CLI formats validated.
+```
+
+See `examples/demo-report.md` for a reviewer-friendly sample report built from the local fixtures.
 
 ## Example Output
 
